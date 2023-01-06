@@ -1,0 +1,40 @@
+body{
+  background-color: black;
+}
+.App{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin:0px;
+  padding:0px;
+  background-color: black;
+}
+.board{
+  height: 90vh;
+  max-height: 300px;
+  min-height: 300px;
+  width: 50vw;
+  max-width: 300px;
+  min-width: 300px;
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+.row{
+  height: 33%;
+  display: flex;
+}
+.box{
+  height: 100%;
+  width: 33%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid white;
+  margin:0px;
+}
+.box:active{
+  background-color: rgb(31, 44, 28);
+}
