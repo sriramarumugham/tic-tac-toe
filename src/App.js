@@ -5,7 +5,9 @@ import "./App.css";
 
 function App() {
   const [board, setBoard] = useState(["", "", "", "", "", "", "", "", ""]);
+
   const [player, setPlayer] = useState("O");
+
   const [winner, setWinner] = useState({
     player: null,
     game: null,
@@ -21,9 +23,11 @@ function App() {
     [0, 4, 8],
     [2, 4, 6],
   ];
+
   useEffect(() => {
     checkWinner();
     checkTie();
+
     if (player === "O") {
       setPlayer("X");
     } else if (player === "X") {
@@ -80,19 +84,20 @@ function App() {
     });
   }
 
-  function checkTie(){
-    let tie=true;
-    board.forEach((value)=>{
-      if(value==""){
-        tie=false;
+  function checkTie() {
+    let tie = true;
+    board.forEach((value) => {
+      if (value == "") {
+        tie = false;
       }
-    })
-    if(tie){
-      setWinner({player:"none" , won:"tie"});
+    });
+    if (tie) {
+      setWinner({ player: "none", won: "tie" });
       alert("Game tie");
       resetBoard();
     }
   }
+
   return (
     <div className="App">
       <div className="board">
