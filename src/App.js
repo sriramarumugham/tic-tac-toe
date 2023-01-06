@@ -102,19 +102,19 @@ function App() {
     <div className="App">
       <div className="board">
         <div className="row">
-          <Box index={board[0]} displayValue={() => displayValue(0)} />
-          <Box index={board[1]} displayValue={() => displayValue(1)} />
-          <Box index={board[2]} displayValue={() => displayValue(2)} />
+          <Box index={board[0]} displayValue={() => displayValue(0) } name={"box_zero"} />
+          <Box index={board[1]} displayValue={() => displayValue(1)} name={"one"}  />
+          <Box index={board[2]} displayValue={() => displayValue(2)}  name={"two"} />
         </div>
         <div className="row">
-          <Box index={board[3]} displayValue={() => displayValue(3)} />
-          <Box index={board[4]} displayValue={() => displayValue(4)} />
-          <Box index={board[5]} displayValue={() => displayValue(5)} />
+          <Box index={board[3]} displayValue={() => displayValue(3)}  name={"three"} />
+          <Box index={board[4]} displayValue={() => displayValue(4)} name={"four"}  />
+          <Box index={board[5]} displayValue={() => displayValue(5)} name={"five"}  />
         </div>
         <div className="row">
-          <Box index={board[6]} displayValue={() => displayValue(6)} />
-          <Box index={board[7]} displayValue={() => displayValue(7)} />
-          <Box index={board[8]} displayValue={() => displayValue(8)} />
+          <Box index={board[6]} displayValue={() => displayValue(6)} name={"six"} />
+          <Box index={board[7]} displayValue={() => displayValue(7)} name={"seven"} />
+          <Box index={board[8]} displayValue={() => displayValue(8)} name={"eight"} />
         </div>
       </div>
     </div>

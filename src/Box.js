@@ -1,8 +1,9 @@
 import React from 'react'
 
-function Box({index , displayValue}) {
+import './App.css';
+function Box({index , displayValue , name}) {
   return (
-    <div className='box' onClick={displayValue}>{index}</div>
+    <div className="box" id={ `${name}` }onClick={displayValue}>{index}</div>
   )
 }
 
